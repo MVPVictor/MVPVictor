@@ -1,11 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <title> Koob </title>
+
 </head>
 <body>
 
+<audio src="" loop  >
+</audio>
+
+    <nav class="menu-nav"> <!-- começo da navbar -->
+
+
+      <img src="img/open-book.png" alt="" class="open">
+      <img src="img/notebook.png" alt="" class="close">
+
+      <a href="#" class="titulo"> <h1> Koob </h1> </a>
+      <div class="openmenu"><i class="fa fa-bars"></i> </div>
+      <ul class="menu-list">
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" class="btn btn-dark">Procurar</button>
+        </form>
+
+        <div class="closemenu"><i class="fa fa-times"></i></div>
+
+        <div class="telefone">
+
+          <a href="#menuNavega" id="btnAbrirNav" class="abrirContent navComp__link"><i class="icon-arrow-down"></i>Menu</a>
+          <br>
+          <a href="https://www.cinepolis.com.br/pre-vendas/" class="navComp__link navComp__link--pv">Pré-vendas</a>
+          <br>
+          <a href="https://www.cinepolis.com.br/promocoes.html" class="navComp__link navComp__link--pv">Promoções</a>
+          <br>
+          <a href="https://www.cinepolis.com.br/produtos-e-servicos.html" class="navComp__link navComp__link--ps">Ajuda e Serviços</a>
+
+        </div>
+
+        <span class="icons">
+
+          <a href="https://pt-br.facebook.com/"> <i class="fab fa-facebook"> </i> </a>
+          <a href="https://www.instagram.com/"> <i class="fab fa-instagram"> </i ></a>
+          <a href="https://twitter.com/i/flow/login"> <i class="fab fa-twitter"> </i> </a>
+          <a href="https://github.com/"> <i class="fab fa-github"> </i> </a>
+
+        </span>
+      </ul>
+    </nav> <!-- fim da nav bar -->
+
+    <div class="sub-nav"> <!-- começo da sub-nav -->
+
+      <div class="espacamento">
+
+        <a href="#menuNavega" id="btnAbrirNav" class="abrirContent navComp__link"><i class="icon-arrow-down"></i>Menu</a>
+        <a href="https://www.cinepolis.com.br/pre-vendas/" class="navComp__link navComp__link--pv">Pré-vendas</a>
+        <a href="https://www.cinepolis.com.br/promocoes.html" class="navComp__link navComp__link--pv">Promoções</a>
+        <a href="https://www.cinepolis.com.br/produtos-e-servicos.html" class="navComp__link navComp__link--ps">Ajuda e Serviços</a>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel"> Faça seu Login </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <form class="formulario">
+
+                  <label for="name"> Nome completo: </label>
+                  <br>
+                  <input type="text" placeholder=" Digite aqui seu Nome ">
+                  <br>
+                  <label for="cpf"> CPF: </label>
+                  <br>
+                  <input type="password" placeholder=" Insira aqui seu CPF ">
+                  <br>
+                  <label for="email"> Email: </label>
+                  <br>
+                  <input type="email" placeholder=" Insira aqui seu Email ">
+                  <br>
+                  <button type="submit"> Entrar </button>
+
+                </form>
+
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"> Faça a Inscrição </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2"> Faça sua Inscrição </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <form class="formulario">
+
+                  <label for="name"> Nome completo: </label>
+                  <br>
+                  <input type="text" placeholder=" Digite aqui seu Nome ">
+                  <br>
+                  <label for="cpf"> CPF: </label>
+                  <br>
+                  <input type="password" placeholder=" Insira aqui seu CPF ">
+                  <br>
+                  <label for="email"> Email: </label>
+                  <br>
+                  <input type="email" placeholder=" Insira aqui seu Email ">
+                  <br>
+                  <button id="inscricao" type="submit"> Inscrever </button> <!-- Depoia se clicar e estiver certo ira para a tela-->
+
+                </form>
+
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> Fazer seu Login </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> Faça seu Login </a>
+
+      </div>
+
+
+    </div> <!-- fim da sub-nav -->
+
+    <h2 class="linha"><span> Os Instrumentos Mortais </span></h2>
+
+    <div class="row">
+
+      <div> <!-- coluna cartões -->
+
+        <div class="row"> <!-- coluna cartâo 1 -->
+
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/cidade-dos-ossos1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Os Instrumentos Mortais </h5>
+                <h5 class="card-title"> Cidade dos Ossos </h5>
+                <p class="card-text"> Escritora: Cassandra Clare </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/cidade-dos-ossos2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Os Instrumentos Mortais </h5>
+                <h5 class="card-title"> Cidade das Cinzas </h5>
+                <p class="card-text"> Escritora: Cassandra Clare </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/cidade-dos-ossos3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Os Instrumentos Mortais </h5>
+                <h5 class="card-title"> Cidade de Vidro </h5>
+                <p class="card-text"> Escritora: Cassandra Clare </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/cidade-dos-ossos4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Os Instrumentos Mortais </h5>
+                <h5 class="card-title"> Cidade dos Anjos Caídos </h5>
+                <p class="card-text"> Escritora: Cassandra Clare </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/cidade-dos-ossos5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Os Instrumentos Mortais </h5>
+                <h5 class="card-title"> Cidade das Perdidas </h5>
+                <p class="card-text"> Escritora: Cassandra Clare </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/cidade-dos-ossos6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Os Instrumentos Mortais </h5>
+                <h5 class="card-title"> Cidade do Fogo Celestial </h5>
+                <p class="card-text"> Escritora: Cassandra Clare </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <h2 class="linha"><span> Harry Potter </span></h2>
+
+        <div class="row"> <!-- coluna cartâo 2 -->
+
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/harry-potter1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Harry Potter </h5>
+                <h5 class="card-title"> Pedra Filosofal  </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/harry-potter2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Harry Potter </h5>
+                <h5 class="card-title"> Câmara Secreta </h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/harry-potter3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Harry Potter </h5>
+                <h5 class="card-title"> Prisioneiro de Azkaban </h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/harry-potter4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Harry Potter </h5>
+                <h5 class="card-title"> Cálice de Fogo </h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row"> <!-- coluna cartâo 2 -->
+
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/harry-potter5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Harry Potter </h5>
+                <h5 class="card-title"> Ordem da Fênix </h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/harry-potter6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Harry Potter </h5>
+                <h5 class="card-title">  </h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 17rem;">
+              <img src="img/harry-potter7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Harry Potter </h5>
+                <h5 class="card-title">  </h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row"> <!-- coluna cartâo 2 -->
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

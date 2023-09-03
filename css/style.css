@@ -1,0 +1,282 @@
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+
+    background: #3490ac;
+    z-index: 0;
+    overflow-x: hidden;
+
+}
+a{
+
+    color: black;
+    text-decoration:none;
+    font-size: 23px;
+
+
+}
+.telefone{
+
+display: none;
+
+}
+.menu-nav{
+
+    background-color: #26C7BF;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    height: 4.4rem;
+
+}
+.menu-list{
+
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.openmenu{
+
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+
+}
+.closemenu{
+
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+
+}
+.sub-nav{
+
+    display: flex;
+    background: #66D0CB;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4.4rem;
+
+}
+.espacamento{
+
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+.fa-facebook:hover{
+
+    color: gray;
+
+}
+.fa-instagram:hover{
+
+    color: gray;
+
+}
+.fa-twitter:hover{
+
+    color: gray;
+
+}
+.fa-github:hover{
+
+    color: gray;
+
+}
+.titulo{
+
+    margin-left: auto;
+    width: 180px;
+
+}
+
+.icons{
+
+    display: none;
+
+}
+.col{
+
+    margin: 30px;
+
+}
+.card{
+
+    background: #3490ac;
+    border: none;
+    text-align: center;
+    margin: auto;
+
+}
+.linha{
+
+    width: 96%;
+    text-align: left;
+    font-weight: lighter;
+    border-bottom: 1px solid #DD1C1A;
+    line-height: 0.1em;
+    margin-top: 80px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    color: #DD1C1A;
+    text-align: center;
+
+}
+.linha span{
+
+     background: rgb(29, 29, 29);
+     padding:0 10px;
+
+}
+.open{
+
+    display: block;
+    margin-left: 100px;
+
+}
+.close{
+
+    display: none;
+
+}
+.d-flex{
+
+    position: absolute;
+    right: 100px;
+
+}
+.modal{
+
+    position: absolute;
+    right: 100px;
+
+}
+@media (max-width: 700px) {
+
+.color-telefone{
+
+color: #DD1C1A;
+
+}
+
+.telefone{
+
+    display: block;
+    text-align: center;
+
+}
+
+.menu-nav{
+
+    display: flex;
+    background: #66D0CB;
+    width: 100%;
+    padding: 5px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+
+}
+
+.menu-list{
+
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #66D0CB;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: top ease 1s;
+    display: none;
+    width: 100%;
+
+}
+
+.openmenu{
+
+    display: block;
+
+}
+
+.closemenu{
+
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+.titulo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+
+}
+
+.brusqueta, .logo2, .sub-nav, .btn{
+
+    display: none;
+
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-github{
+
+    align-items: center;
+    justify-content: center;
+    display:block
+
+}
+
+.icons{
+
+    display: block;
+
+}
+
+.open{
+
+    display: none;
+
+}
+
+.close{
+
+    display: block;
+
+}
+
+.d-flex, .form-control{
+
+    display: none;
+
+}
+
+}
